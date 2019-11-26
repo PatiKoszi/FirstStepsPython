@@ -1,8 +1,14 @@
 def sito_Eratostenesa(n):
-    primes = [1 for x in range(n+1)]
-    for i in range(2, n):
-        for j in range(i+1, n):
+    temp = [1 for x in range(n+1)]
+    for i in range(2, n+1):
+        for j in range(i+1, n+1):
             if j % i == 0:
-                primes[j] = 0
+                temp[j] = 0
+    print(temp)
+    primes = []
+    for i in range(len(temp)):
+        if temp[i] == 1:
+            primes.append(i)
+
     return primes
-print(sito_Eratostenesa(30))
+print(sito_Eratostenesa(100))
