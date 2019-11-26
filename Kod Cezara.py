@@ -25,7 +25,7 @@ def cezar_message(message, key):
     return encrypted_message
 
 
-print("\n Twoja zaszyfrowana wiadomość to: ", cezar_message("Wizytowka", 12))
+print("\n Twoja zaszyfrowana wiadomość to: ", cezar_message("Asia", 12))
 
 
 
