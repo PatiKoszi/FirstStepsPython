@@ -12,3 +12,5 @@ for i in range(period):
     print(capital)
 
 
+
+
