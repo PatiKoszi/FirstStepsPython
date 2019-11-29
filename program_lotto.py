@@ -14,8 +14,9 @@ print(lista1(10))
 lista3 = [1,2,3,4,5,6,7,8,9,10]
 print(lista3)
 
-lista4 = list(range(1,11))
+lista4 = list(range(1,49))
 print(lista4)
+
 
 wylosowana_lista = random.sample(lista4, k=6)
 wylosowana_lista.sort()
