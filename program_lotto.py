@@ -11,10 +11,10 @@ def lista1(n):
     return[i+1 for i in range(n)]
 print(lista1(10))
 
-lista3 = [1,2,3,4,5,6,7,8,9,10]
+lista3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(lista3)
 
-lista4 = list(range(1,49))
+lista4 = list(range(1, 49))
 print(lista4)
 
 
