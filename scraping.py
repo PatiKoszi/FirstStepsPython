@@ -16,6 +16,12 @@ containers = page_soup.find_all("div", {"class": "item-container"})
 
 print(len(containers))
 
+filename = "products.csv"
+f = open(filename, "w")
+
+headers = "brand, product_name, price \n"
+f.write(headers)
+
 
 for container in containers:
     brand = container.find("div", {"class": "item-info"}).a.img["title"]
@@ -30,6 +36,8 @@ for container in containers:
     print("product_name: " + product_name)
     print("price" + price)
 
+    f.write(brand + "," + product_name + "," + price)
+f.close()
 
 
 
